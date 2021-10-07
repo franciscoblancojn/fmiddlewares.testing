@@ -21,4 +21,6 @@ router.use('/boolean', require('@/routes/boolean.routes'))
 
 router.use('/leave-undefined', require('@/routes/leaveUndefined.routes'))
 
+router.use('/exact-data', require('@/routes/exactData.routes'))
+
 module.exports = router
