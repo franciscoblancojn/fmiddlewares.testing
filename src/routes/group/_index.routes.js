@@ -18,4 +18,6 @@ router.use('/array', require('@/routes/group/array.routes'))
 
 router.use('/compare', require('@/routes/group/compare.routes'))
 
+router.use('/leave-undefined', require('@/routes/group/leaveUndefined.routes'))
+
 module.exports = router
