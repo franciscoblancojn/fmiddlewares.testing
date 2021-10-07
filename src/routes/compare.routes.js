@@ -17,4 +17,20 @@ router.post(
   _default
 )
 
+router.post(
+  '/function',
+  [
+    fmiddlewares.validateItem({
+        key : {
+            type:"compare",
+            value:"12345",
+            function:(compare)=>{
+              return compare.value == "33333"
+            }
+        }
+    },"headers")
+  ],
+  _default
+)
+
 module.exports = router
