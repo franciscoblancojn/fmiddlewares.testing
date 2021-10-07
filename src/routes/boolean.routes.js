@@ -8,10 +8,8 @@ router.post(
   '/',
   [
     fmiddlewares.validateItem({
-        age : {
-            type:"number",
-            min: 10,
-            max: 20,
+        married : {
+            type:"boolean"
         }
     })
   ],

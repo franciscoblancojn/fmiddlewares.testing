@@ -17,4 +17,6 @@ router.use('/object', require('@/routes/object.routes'))
 
 router.use('/number', require('@/routes/number.routes'))
 
+router.use('/boolean', require('@/routes/boolean.routes'))
+
 module.exports = router
