@@ -8,4 +8,6 @@ router.use('/email', require('@/routes/group/email.routes'))
 
 router.use('/password', require('@/routes/group/password.routes'))
 
+router.use('/list', require('@/routes/group/list.routes'))
+
 module.exports = router
