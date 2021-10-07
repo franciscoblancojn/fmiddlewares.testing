@@ -27,4 +27,6 @@ router.use('/leave-undefined', require('@/routes/leaveUndefined.routes'))
 
 router.use('/exact-data', require('@/routes/exactData.routes'))
 
+router.use('/group', require('@/routes/group/_index.routes'))
+
 module.exports = router
