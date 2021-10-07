@@ -8,7 +8,9 @@
     "serve": "nodemon src/server.js",
     "start": "node src/server.js",
     "updateTh": "git addc 'update thunder-collection'",
-    "push": "git push && git push gith"
+    "push": "git push && git push gith",
+    "lint": "npx standard src/",
+    "format": "npx standard --fix src/"
   },
   "repository": {
     "type": "git",
