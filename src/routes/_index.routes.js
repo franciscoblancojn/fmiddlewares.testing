@@ -19,6 +19,8 @@ router.use('/number', require('@/routes/number.routes'))
 
 router.use('/boolean', require('@/routes/boolean.routes'))
 
+router.use('/array', require('@/routes/array.routes'))
+
 router.use('/leave-undefined', require('@/routes/leaveUndefined.routes'))
 
 router.use('/exact-data', require('@/routes/exactData.routes'))
