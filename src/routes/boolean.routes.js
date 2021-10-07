@@ -3,14 +3,13 @@ const router = require('express').Router()
 const fmiddlewares = require('fmiddlewares')
 const _default = require('@/controllers/default')
 
-  
 router.post(
   '/',
   [
     fmiddlewares.validateItem({
-        married : {
-            type:"boolean"
-        }
+      married: {
+        type: 'boolean'
+      }
     })
   ],
   _default

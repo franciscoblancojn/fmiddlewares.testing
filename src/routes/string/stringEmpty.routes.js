@@ -4,26 +4,26 @@ const fmiddlewares = require('fmiddlewares')
 const _default = require('@/controllers/default')
 
 router.get(
-  '/', 
+  '/',
   [
     fmiddlewares.validateItem({
       name: {
         type: 'string',
-        isEmpty:true,
-      },
-    },"query")
+        isEmpty: true
+      }
+    }, 'query')
   ],
-   _default
+  _default
 )
-  
+
 router.post(
   '/',
   [
     fmiddlewares.validateItem({
       name: {
         type: 'string',
-        isEmpty:true,
-      },
+        isEmpty: true
+      }
     })
   ],
   _default

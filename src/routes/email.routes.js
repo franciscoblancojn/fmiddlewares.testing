@@ -4,24 +4,24 @@ const fmiddlewares = require('fmiddlewares')
 const _default = require('@/controllers/default')
 
 router.get(
-  '/', 
+  '/',
   [
     fmiddlewares.validateItem({
-        email: {
-            type: 'email',
-        },
-    },"query")
+      email: {
+        type: 'email'
+      }
+    }, 'query')
   ],
-   _default
+  _default
 )
-  
+
 router.post(
   '/',
   [
     fmiddlewares.validateItem({
-        email: {
-            type: 'email',
-        },
+      email: {
+        type: 'email'
+      }
     })
   ],
   _default

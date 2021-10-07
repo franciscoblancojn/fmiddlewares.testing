@@ -38,8 +38,8 @@ app.use((req, res, next) => {
 app.use('/api/v1', routes)
 app.use('*', (req, res) => {
   res.status(404).send({
-    "type":"error",
-    "error":"404"
+    type: 'error',
+    error: '404'
   })
 })
 

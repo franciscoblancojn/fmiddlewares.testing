@@ -4,32 +4,32 @@ const fmiddlewares = require('fmiddlewares')
 const _default = require('@/controllers/default')
 
 router.get(
-  '/', 
+  '/',
   [
     fmiddlewares.validateItem({
-        sex : {
-            type:"list",
-            list:[
-                "male",
-                "feminine"
-            ]
-        }
-    },"query")
+      sex: {
+        type: 'list',
+        list: [
+          'male',
+          'feminine'
+        ]
+      }
+    }, 'query')
   ],
-   _default
+  _default
 )
-  
+
 router.post(
   '/',
   [
     fmiddlewares.validateItem({
-        sex : {
-            type:"list",
-            list:[
-                "male",
-                "feminine"
-            ]
-        }
+      sex: {
+        type: 'list',
+        list: [
+          'male',
+          'feminine'
+        ]
+      }
     })
   ],
   _default
