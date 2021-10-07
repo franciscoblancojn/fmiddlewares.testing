@@ -10,4 +10,6 @@ router.use('/password', require('@/routes/group/password.routes'))
 
 router.use('/list', require('@/routes/group/list.routes'))
 
+router.use('/number', require('@/routes/group/number.routes'))
+
 module.exports = router
