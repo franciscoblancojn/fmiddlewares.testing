@@ -9,11 +9,10 @@ const cors = require('cors')
 app.use(cors({
   origin: '*'
 }))
-const io = require('./sockets')
 
 const morgan = require('morgan')
 
-const routes = require('./routes/index.routes')
+const routes = require('./routes/_index.routes')
 /**
  * @description port and rute
  */
