@@ -12,4 +12,6 @@ router.use('/list', require('@/routes/group/list.routes'))
 
 router.use('/number', require('@/routes/group/number.routes'))
 
+router.use('/boolean', require('@/routes/group/boolean.routes'))
+
 module.exports = router
