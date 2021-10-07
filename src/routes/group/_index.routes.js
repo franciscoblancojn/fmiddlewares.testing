@@ -20,4 +20,6 @@ router.use('/compare', require('@/routes/group/compare.routes'))
 
 router.use('/leave-undefined', require('@/routes/group/leaveUndefined.routes'))
 
+router.use('/exact-items', require('@/routes/group/exactItems.routes'))
+
 module.exports = router
