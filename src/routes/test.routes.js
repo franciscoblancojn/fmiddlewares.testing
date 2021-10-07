@@ -9,7 +9,20 @@ router.post(
   [
     fmiddlewares.validateItem({
       data: {
-        type: 'object'
+        type: 'object',
+        items:{
+            exactItems:true,
+            name:{
+                type:"string",
+                isUndefined:true
+        
+            },
+            name3:{
+                type:"string",
+                isUndefined:true
+        
+            }
+        }
       },
     })
   ],
