@@ -21,6 +21,8 @@ router.use('/boolean', require('@/routes/boolean.routes'))
 
 router.use('/array', require('@/routes/array.routes'))
 
+router.use('/compare', require('@/routes/compare.routes'))
+
 router.use('/leave-undefined', require('@/routes/leaveUndefined.routes'))
 
 router.use('/exact-data', require('@/routes/exactData.routes'))
