@@ -1,0 +1,24 @@
+{
+  "name": "fmiddlewares.testing",
+  "version": "1.0.0",
+  "description": "api for testing npm packages fmiddlewares",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/npmjs_packages/fmiddlewares.testing.git"
+  },
+  "keywords": [
+    "api",
+    "testing",
+    "fmiddlewares"
+  ],
+  "author": "franciscoblancojn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/npmjs_packages/fmiddlewares.testing/issues"
+  },
+  "homepage": "https://gitlab.com/npmjs_packages/fmiddlewares.testing#readme"
+}
