@@ -13,6 +13,6 @@ io.on('connection', socket => {
   console.log('[SOCKET]:: Conected by =>', socket.id)
 })
 
-server.listen(3001, () => {
+server.listen(3000, () => {
   console.log('server on port: 3001')
 })
