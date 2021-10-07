@@ -14,4 +14,6 @@ router.use('/number', require('@/routes/group/number.routes'))
 
 router.use('/boolean', require('@/routes/group/boolean.routes'))
 
+router.use('/array', require('@/routes/group/array.routes'))
+
 module.exports = router
