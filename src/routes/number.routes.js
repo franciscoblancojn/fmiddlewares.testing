@@ -8,7 +8,7 @@ const _default = require('@/controllers/default')
 router.post(
   '/',
   [
-    fmiddlewaresTest.validateItem({
+    fmiddlewares.validateItem({
         age : {
             type:"number",
             min: 10,
