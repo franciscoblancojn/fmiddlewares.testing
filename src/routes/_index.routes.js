@@ -11,4 +11,6 @@ router.use('/email', require('@/routes/email.routes'))
 
 router.use('/password', require('@/routes/password.routes'))
 
+router.use('/list', require('@/routes/list.routes'))
+
 module.exports = router
