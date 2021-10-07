@@ -16,4 +16,6 @@ router.use('/boolean', require('@/routes/group/boolean.routes'))
 
 router.use('/array', require('@/routes/group/array.routes'))
 
+router.use('/compare', require('@/routes/group/compare.routes'))
+
 module.exports = router
