@@ -13,4 +13,6 @@ router.use('/password', require('@/routes/password.routes'))
 
 router.use('/list', require('@/routes/list.routes'))
 
+router.use('/object', require('@/routes/object.routes'))
+
 module.exports = router
