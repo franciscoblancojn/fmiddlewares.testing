@@ -9,12 +9,11 @@ router.post(
   '/',
   [
     fmiddlewaresTest.validateItem({
-      key : {
-          type:"compare",
-          value:"value",
-          function:(compare)=>{
-            return compare.value == 1
-          }
+      items : {
+        type:"array",
+        min:1,
+        max:3,
+        typeElemets:"number"
       }
     })
   ],
