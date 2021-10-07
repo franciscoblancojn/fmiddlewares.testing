@@ -19,4 +19,6 @@ router.use('/number', require('@/routes/number.routes'))
 
 router.use('/boolean', require('@/routes/boolean.routes'))
 
+router.use('/leave-undefined', require('@/routes/leaveUndefined.routes'))
+
 module.exports = router
