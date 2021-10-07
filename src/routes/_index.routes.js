@@ -15,4 +15,6 @@ router.use('/list', require('@/routes/list.routes'))
 
 router.use('/object', require('@/routes/object.routes'))
 
+router.use('/number', require('@/routes/number.routes'))
+
 module.exports = router
