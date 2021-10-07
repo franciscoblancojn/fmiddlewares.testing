@@ -4,7 +4,8 @@
   "description": "api for testing npm packages fmiddlewares",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "updateTh":"git addc 'update thunder-collection'"
   },
   "repository": {
     "type": "git",
