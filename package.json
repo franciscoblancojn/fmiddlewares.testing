@@ -5,6 +5,8 @@
   "main": "src/server.js",
   "scripts": {
     "dev": "nodemon src/server.js",
+    "serve": "nodemon src/server.js",
+    "start": "node src/server.js",
     "updateTh": "git addc 'update thunder-collection'",
     "push": "git push && git push gith"
   },
