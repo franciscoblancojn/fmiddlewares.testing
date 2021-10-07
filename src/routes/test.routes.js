@@ -1,5 +1,6 @@
 require('module-alias/register')
 const router = require('express').Router()
+const fmiddlewaresTest = require('@/middlewares/fmiddlewares.test.js')
 const fmiddlewares = require('fmiddlewares')
 const _default = require('@/controllers/default')
 
@@ -7,23 +8,14 @@ router.get('/', [], _default)
 router.post(
   '/',
   [
-    fmiddlewares.validateItem({
-      data: {
-        type: 'object',
-        items:{
-            exactItems:true,
-            name:{
-                type:"string",
-                isUndefined:true
-        
-            },
-            name3:{
-                type:"string",
-                isUndefined:true
-        
-            }
-        }
-      },
+    fmiddlewaresTest.validateItem({
+      key : {
+          type:"compare",
+          value:"value",
+          function:(compare)=>{
+            return compare.value == 1
+          }
+      }
     })
   ],
   _default
