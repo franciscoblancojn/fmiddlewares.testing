@@ -9,7 +9,10 @@ router.post(
   [
     fmiddlewares.validateItem({
         items : {
-            type:"array"
+            type:"array",
+            min:1, //if need min elements
+            max:3, //if need max elements
+            typeElemets:"number" //if need all element is type typeElemets
         }
     })
   ],
